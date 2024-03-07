@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Red Hat Display";
+}
+
+/* MOBILE FIRST DESIGN */
+@media only screen and (max-width: 480px) {
+  html {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 331px;
+    height: 100vh;
+    padding-left: 22px;
+    padding-right: 22px;
+    /* border: 2px SOLID BLACK; */
+  }
+  .container {
+    height: auto;
+    background-color: #fff;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    border-radius: 20px;
+  }
+  .hero {
+    width: 331px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+  .container h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    padding: 0 34px;
+    margin-bottom: 24px;
+  }
+  .grid-2-2 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 24px;
+    border-radius: 10px;
+  }
+  figure img {
+    padding: 16px 0 16px 16px;
+  }
+  figcaption {
+    /* padding-top: 10px; */
+  }
+  figcaption h2 {
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 900;
+  }
+  .price {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    padding-left: 20px;
+  }
+  figure a {
+    font-size: 14px;
+    font-weight: 900;
+    padding-right: 16px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+  }
+  .btn-proceed {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 12px 0;
+    border: 1px solid hsl(245, 75%, 52%);
+    border-radius: 10px;
+    box-shadow: 0px 12px 20px -2px hsla(245, 75%, 52%, 0.336);
+    .btn-proceed:hover {
+      cursor: pointer;
+      background-color: hsl(273, 86%, 67%);
+      border: 1px solid hsl(273, 86%, 67%);
+    }
+  }
+  .btn-cancel {
+    margin-bottom: 24px;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    background: none;
+    color: hsl(224, 23%, 55%);
+  }
+  .btn-cancel:hover {
+    cursor: pointer;
+    color: #000;
+  }
+}
+
+/* DESKTOP DESIGN */
+@media only screen and (min-width: 480px) {
+  html {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/body-background.jpg);
+  }
+  body {
+    width: 1440px;
+    height: 554px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: hsl(225, 100%, 94%);
+    box-shadow: 2px 20px 20px 2px rgba(171, 146, 194, 0.377);
+    /* border: 2px SOLID BLACK; */
+  }
+  .container {
+    width: 331px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    /* box-shadow: 10px 10px 10px 10px (black); */
+    /* margin-top: 76px; */
+    border-radius: 20px;
+  }
+  .hero {
+    width: 331px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+  .container h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    padding: 0 34px;
+    margin-bottom: 24px;
+  }
+  .grid-2-2 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 24px;
+    border-radius: 10px;
+  }
+  figure img {
+    padding: 16px 0 16px 16px;
+  }
+  figcaption {
+    /* padding-top: 10px; */
+  }
+  figcaption h2 {
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 900;
+  }
+  .price {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    padding-left: 20px;
+  }
+  figure a {
+    font-size: 14px;
+    font-weight: 900;
+    padding-right: 16px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+  }
+  .btn-proceed {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 12px 0;
+    border: 1px solid hsl(245, 75%, 52%);
+    border-radius: 10px;
+    box-shadow: 0px 12px 20px -2px hsla(245, 75%, 52%, 0.336);
+  }
+  .btn-proceed:hover {
+    cursor: pointer;
+    background-color: hsl(273, 86%, 67%);
+    border: 1px solid hsl(273, 86%, 67%);
+  }
+  .btn-cancel {
+    margin-bottom: 24px;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    background: none;
+    color: hsl(224, 23%, 55%);
+  }
+  .btn-cancel:hover {
+    cursor: pointer;
+    color: #000;
+  }
+}
